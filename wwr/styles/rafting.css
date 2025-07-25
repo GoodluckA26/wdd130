@@ -14,6 +14,90 @@ header {
     color: var(--accent2-color);
 
 }
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    align-content: space-between;
+    border-bottom: 2px 
+    solid #ccc;
+    max-width: 1000px;
+}
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+h1 {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+.box {
+    position:absolute;
+    top: 70px;
+    background-color: #f4e9d7;
+    text-align:start;
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 70%;
+    padding: 0.2rem;
+    width: min(500px, 70%);
+    font-size: 0.7rem;
+    opacity: 0.8; 
+    color: var(--accent2-color);
+}
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+
+}
+.grid-history {
+
+    display: grid;
+    grid-template-columns: 250px 550px;
+    gap: 2px;
+    align-items: normal;
+    font-size: small;
+    margin: 0 20px;
+    background-color:darkslategray;
+    padding: 10px;
+
+    
+    }
+    
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+body {
+    font-family: Acme, Arial, sans-serif;
+}
 
 * {
     margin: 0;
@@ -45,6 +129,33 @@ nav, p, article {
     width: 0.5em;
     text-decoration: none;
 }
+.gallery {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows:minmax(150px, 1fr);
+    gap: 20px;  
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.gallery-paragraph {
+    grid-column: 1 / -1;
+    text-align:end;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 10px 0;
+    border: #34312D solid 1px;
+    padding: 10px;
+}
 
 .hero {
     position: relative;
@@ -54,18 +165,8 @@ nav, p, article {
     width: 100%;
     height: auto;
 }
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
 
-}
-/* last update is 19/july 2025 */
+/* last update is 25/july 2025 */
 .hero article img {
     float: right;
     width: 125px;
