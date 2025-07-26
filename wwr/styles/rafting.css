@@ -125,6 +125,15 @@ nav, p, article {
     margin: 16px;
     padding: 8px;
 }
+.socialmedia {
+    display: grid;
+    grid-template-columns: 300px 30px 30px 30px;
+    grid-template-rows: 10px;
+    align-items: auto;
+    background-color: #34312D;
+    padding: 20px;
+
+}
 .socialmedia a {
     width: 0.5em;
     text-decoration: none;
@@ -135,12 +144,14 @@ nav, p, article {
     grid-template-columns: 150px 150px 150px 150px 150px;
     grid-template-rows:minmax(150px, 1fr);
     gap: 20px;  
+    padding: 30px;
 }
 .gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ 
 }
 .gallery-paragraph {
     grid-column: 1 / -1;
