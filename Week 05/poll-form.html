@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML - USER POLL</title>
+    <link rel="stylesheet" href="./styles 05/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML - USER POLL</h1>
+
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Informatiom</legend>
+                <!-- form elements will go here -->
+                 <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input type="text" id="Fullname" name="Fullname" placeholder="Enter your fullname" required>
+                 </div>
+                <div class="form-item">
+                    <label for="email">Useremail:</label>
+                    <input type="email" id="Useremail" name="Useremail" placeholder="Enter your email address" required>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend> Questions</legend>
+                <!-- form elements will go here -->
+                 <div class="column1">
+                    <label for="Questions"> What is your favourite browser</label>
+                    <select id="browser" name="browser"></select>
+                    <option value="chrome">Google Chrome</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="opera">Opera</option>
+                    <option value="other">Other</option>
+                 </div>
+                 <div class="column2">
+                    <label for="Questions"> Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                    <label for="feedback">List the place you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder=" Stillwater Florida, Amsterdam Netherlands, Tibuktu mali "></textarea><br>
+                 </div>
+                 
+                 
+                <button type="submit">Submit poll</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 | WDD 130 | HTML - USER POLL | Goodluck Adesayo</p>
+    </footer>
+    
+</body>
+</html>
