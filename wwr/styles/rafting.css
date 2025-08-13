@@ -395,7 +395,7 @@ h3 {
     padding: 15px;
     margin-top: 20px;
     background-color: rgb(24, 98, 93);
-    color: rgb(255, 255, 255)#000;
+    color: rgb(255, 255, 255);
     text-size-adjust: 100%;
     font-weight: 400;
     border-radius: 1px;
@@ -519,8 +519,9 @@ h3 {
     width: 100%;
     height: auto;
     display: block;
-    margin-top : 70px auto;
-    
+    margin: 0 auto
+
+
 }
 .home-pr {
     position: relative;
@@ -601,7 +602,7 @@ h3 {
     padding: 10px;
     font-weight: 700;
     margin-bottom: 40px;
-    font-style:roboto, sans-serif;
+    font-style:  sans-serif;
 }
 .home-gallery {
     display: grid;
